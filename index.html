@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugn up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sidePicAndLogo">
+        <div class="picContainer">
+            <img class="siteLogo" src="./images/siteLogo.png" alt="">
+        </div>
+    </div><br>
+    <div id="register">
+        <div class="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up to get started</p>
+            <p>You know you want to.</p>
+        </div>
+        <form action="https://httpbin.org/post" method="post">
+            <div class="formContainer">
+                <p style="margin-left: calc(var(--margin-left) - 18px);">Let's do this!</p>
+                <div class="formDetails">
+                    <div class="leftPart">
+                        <label for="firstName">FIRST NAME</label><br>
+                        <input type="text" name="firstName" id="firstName" placeholder="Kato" autofocus><br>
+                        <label for="email"">EMAIL</label><br>
+                        <input type="email" name="email" id="email"><br>
+                        <label for="password">PASSWORD</label><br>
+                        <input type="password" name="password" id="password" required>
+                        <p class="passwordCheck">*Passwords do not match</p>
+                    </div>
+                    <div class="rightPart">
+                        <label for="lastName">LAST NAME</label><br>
+                        <input type="text" name="lastName" id="lastName" placeholder="Samuel Namuene"><br>
+                        <label for="phoneNumber" class="phoneNumber">PHONE NUMBER</label><br>
+                        <input type="number" name="phoneNumber" id="phoneNumber"><br>
+                        <label for="confirmPassword">CONFIRM PASSWORD</label><br>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit">Create Account</button>
+                <button type="reset">Reset Form</button>
+                <p class="login">Already have an account? <a href="">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
